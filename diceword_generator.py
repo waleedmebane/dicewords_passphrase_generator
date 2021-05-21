@@ -60,7 +60,6 @@ def gen_dicewords_strings(dicewords_indexes: List[int],
                               dicewords_mapping)
 
 
-
 def gen_dicewords(path_to_dicewords_list_file: str,
                   num_words_to_generate: int) -> List[str]:
     """ Returns randomly generated list of dicewords.
@@ -93,6 +92,8 @@ def gen_dicewords(path_to_dicewords_list_file: str,
     return [ el for el in gen_dicewords_strings(diceword_indexes,
                                                unique_dicewords
                                                )]
+
+
 def test_1(num_words_to_generate: int) -> None:
     """Test trivial edge case: all Dicewords indexes equal to zero."""
     diceword_indexes: Final[List[int]] = [el for el in gen_diceword_indexes(
@@ -103,7 +104,6 @@ def test_1(num_words_to_generate: int) -> None:
     assert len(diceword_indexes) == num_words_to_generate
     for i in range(num_words_to_generate):
         assert diceword_indexes[i] == 0
-
 
 
 def test_2() -> None:
@@ -125,6 +125,7 @@ def test_2() -> None:
     assert len(diceword_indexes) == 6
     for k, i in enumerate(diceword_indexes):
         assert k == i
+
 
 def test_3() -> None:
     """ Test getting Diceword indexes where multiple of the Diceword
@@ -177,7 +178,6 @@ def test_4(path_to_dicewords_list_file: str,
 
     logger.debug(unique_dicewords)
     assert len(unique_dicewords) == 1
-
 
 
 def test(path_to_dicewords_list_file: str,
@@ -236,6 +236,3 @@ else:
     dicewords_lines_list: Final[List[str]] = gen_dicewords(DICEWORDS_FILE_PATH, NUM_WORDS_TO_GENERATE)
     logger.debug(dicewords_lines_list)
     print(' '.join(k.split()[COLUMN_NUM_OF_DICEWORD] for k in dicewords_lines_list))
-
-
-
