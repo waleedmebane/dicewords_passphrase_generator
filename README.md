@@ -3,7 +3,7 @@
 You don't need to use this script (or any like it) to generate Diceword passphrases; you can do it manually with real six-sided dice.
 You can use this script if you need to generate passphrases automatically or need to generate several passphrases quickly or if you temporarily find yourself without dice.
 
-You will need a Dicewords list, which you can find at:  <br />
+You will need a Dicewords word list, which you can find at:  <br />
 https://theworld/~reinhold/diceware.html OR  <br />
 https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases
 
