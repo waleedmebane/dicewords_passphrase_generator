@@ -233,6 +233,7 @@ elif COLUMN_NUM_OF_DICEWORD < 0:
 elif args.test:
     test(DICEWORDS_FILE_PATH, NUM_WORDS_TO_GENERATE)
 else:
-    dicewords_lines_list: Final[List[str]] = gen_dicewords(DICEWORDS_FILE_PATH, NUM_WORDS_TO_GENERATE)
+    dicewords_lines_list: Final[List[str]] = gen_dicewords(DICEWORDS_FILE_PATH, 
+                                                           NUM_WORDS_TO_GENERATE)
     logger.debug(dicewords_lines_list)
     print(' '.join(k.split()[COLUMN_NUM_OF_DICEWORD] for k in dicewords_lines_list))
