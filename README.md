@@ -1,7 +1,7 @@
 # dicewords_passphrase_generator
 
 You don't need to use this script (or any like it) to generate Diceword passphrases; you can do it manually with real six-sided dice.
-You can use this script if you need to generate passphrases automatically or need to generate several passphrases quickly or if you temporarily find yourself without dice.
+You can use this command-line script if you need to generate passphrases automatically or need to generate several passphrases quickly or if you temporarily find yourself without dice.
 
 You will need a Dicewords word list, which you can find at:  <br />
 https://theworld.com/~reinhold/diceware.html OR  <br />
@@ -16,6 +16,9 @@ In his FAQ at his Diceware website, Arnold Reinhold recommends using a Dicewords
 Requirements:
 Python 3 version >= 3.6
 (Tested with Python version 3.7.4.)
+
+Usage:
+Run the script with the `--help` command line option to get usage information.
 
 License:
 BSD 3-Clause license found in the LICENSE file
