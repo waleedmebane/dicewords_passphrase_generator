@@ -4,7 +4,7 @@ You don't need to use this script (or any like it) to generate Diceword passphra
 You can use this script if you need to generate passphrases automatically or need to generate several passphrases quickly or if you temporarily find yourself without dice.
 
 You will need a Dicewords word list, which you can find at:  <br />
-https://theworld/~reinhold/diceware.html OR  <br />
+https://theworld.com/~reinhold/diceware.html OR  <br />
 https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases
 
 The script expects the list of words to start on the first line of the file.  So, remove the PGP header and empty line(s) from the top of your Dicewords list before using it with this script, such that the first line contains the first word of the list.
