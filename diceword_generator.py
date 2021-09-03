@@ -16,12 +16,12 @@ import sys
 import argparse
 import logging
 import itertools
-from math import ceil
+from math import ceil, log2
 from typing import List, Dict, Iterable
 from typing_extensions import Final
 
 NUM_DICEWORDS: Final[int] = int(pow(6, 5)) #permutations of 5 die rolls
-DICEWORDS_BITS_PER_WORD: Final[int] = 13
+DICEWORDS_BITS_PER_WORD: Final[int] = ceil(log2(NUM_DICEWORDS))
 BITS_PER_BYTE: Final[int] = 8
 
 
